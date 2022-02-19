@@ -22,4 +22,11 @@ const navSlide = () => {
 
 }
 
+setTimeout(function(){
+    var element =document.getElementById("picture-of-me");
+    element.classList.remove("preload");
+},2000);
+
+
+
 navSlide();

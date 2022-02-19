@@ -10,55 +10,127 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
   <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a5a329bfa5.js" crossorigin="anonymous"></script>
   <title>Carson Mishoe</title>
 </head>
 
-<!-- NAV SECTION -->
-<nav id="navbar" class="nav">
-  <div class="logo">
-    <h4>
-      Carson Mishoe
-    </h4>
-  </div>
-  <ul class="nav-links">
-    <li><a href="#welcome-section">Home</a></li>
-    <li><a href="#about-section">About</a></li>
-    <li><a href="#work-section">Work</a></li>
-    <li><a href="#projects">Projects</a></li>
-  </ul>
-  <div class="burger">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-  </div>
-</nav>
-<script src="index.js"></script>
+<body>
+  <!-- NAV SECTION -->
+  <nav id="navbar" class="nav">
+    <div class="logo">
+      <h4>
+        Carson Mishoe
+      </h4>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#welcome-section">Home</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <script src="index.js"></script>
 
-<!-- END NAV SECTION -->
+  <!-- END NAV SECTION -->
 
-<!-- START WELCOME SECTION -->
+  <!-- START WELCOME SECTION -->
 
-<welcome id="welcome-section" class="centered">
-  <h1>Welcome</h1>
-  <img id="picture-of-me" src="https://media-exp1.licdn.com/dms/image/C5603AQFDTWy2giqiGw/profile-displayphoto-shrink_800_800/0/1644176537420?e=1650499200&v=beta&t=O2YHIQpmRxuxnSCGDWj7VEnj_hFkQtNgv7cZ0MA_Ze0"></img>
-</welcome>
+  <welcome id="welcome-section" class="centered">
+    <h1>Welcome</h1>
+    <img id="picture-of-me" class="preload" src="https://media-exp1.licdn.com/dms/image/C5603AQFDTWy2giqiGw/profile-displayphoto-shrink_800_800/0/1644176537420?e=1650499200&v=beta&t=O2YHIQpmRxuxnSCGDWj7VEnj_hFkQtNgv7cZ0MA_Ze0"></img>
+  </welcome>
 
-<!-- END WELCOME SECTION -->
-<section class="blue-gradient">
+  <!-- END WELCOME SECTION -->
+
   <!-- ABOUT SECTION -->
-  <section id="about-section">about me</section>
+  <section id="about-section">
+    <br></br>
+    <br></br>
+    <div id="about-container" class="container">
+      <div id="about-row" class="row">
+        <h3>About Me</h3>
+        <p id="about-description">Hi I'm Carson Mishoe, an aspiring and highly capable Software Engineer. I have a
+          wide range of knowladge from IT to Web Development. I am seeking a role in San Fransisco Bay Area to
+          continue my career and improve my skillsets! With my knowledge in tech and skills in coding I can bring a lot your company!</p>
+        <br></br>
+      <h1><a href=# id="resume-link">See my resume!</a></h1>
+      </div>
+    </div>
+  </section>
   <!-- END ABOUT SECTION -->
 
   <!-- WORK SECTION -->
-  <section id="work-section">work stuff</section>
+  <section id="projects" class="projects-section">
+    <br></br>
+    <br></br>
+    <h2 class="projects-section-header">My Work and Projects</h2>
+
+    <div class="projects-grid">
+      <a href="https://github.com/cmishoe72/btb-public" target="_blank" class="project project-tile">
+        <img class="project-image" src="https://image.api.playstation.com/vulcan/ap/rnd/202103/0812/bqbY0ywPXNxFOjmR4fimaGBh.jpg" alt="project" />
+        <p class="project-title">
+          Discord Bot
+        </p>
+      </a>
+      <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
+        <img class="project-image" src="https://www.macmillandictionary.com/external/slideshow/full/White_full.png" alt="project" />
+        <p class="project-title">
+          Placeholder</p>
+      </a>
+      <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+        <img class="project-image" src="https://www.macmillandictionary.com/external/slideshow/full/White_full.png" alt="project" />
+        <p class="project-title">
+          Placeholder
+        </p>
+      </a>
+
+    </div>
+
+  </section>
   <!-- END WORK SECTION -->
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects">
-    <a class="project-tile">flkgj;</a>
-    <a id="profile-link" target="_blank" href="https://github.com/cmishoe72">My Github</a>
+  <!-- CONTACT SECTION -->
+  <section id="contact-section">
+    <br></br>
+  <div id="email-form" class="form-container">
+    <h1>Send me a message!</h1>
+    <form action="https://formspree.io/f/mvolaqye" method="POST">
+      
+      <label><input type="text" name="name" placeholder="Name..." required></input></label>
+      <label>
+        <div>
+          <input type="email" name="email" placeholder="Email..." required>
+      </label>
+      </div>
+      <div>
+        <label><input type="text" name="subject" placeholder="Subject..." required></input </label>
+      </div>
+      <label>
+
+        <textarea name="message" placeholder="Please enter your message..." required></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <div>
+        <button type="submit">Send</button>
+      </div>
+      </div>
+    </form>
+<br></br>
+    <div class="icons">
+      <a id="profile-link" target="_blank" href="https://github.com/cmishoe72">
+        <i id="github-icon" class="fa-brands fa-github fa-fw fa-3x"></i></a>
+      <a id="linkedin-link" target="_blank" href="https://www.linkedin.com/in/carson-mishoe-597321225/">
+        <i id="linkedin-icon" class="fa-brands fa-linkedin fa-3x"></i>
+      </a>
+    </div>
   </section>
-  <!-- END PROJECTS SECTION -->
-</section>
+  <!-- END CONTACT SECTION -->
+  </section>
+</body>
 
 </html>

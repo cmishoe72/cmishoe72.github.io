@@ -1,6 +1,5 @@
 /* GLOBAL VARIABLES */
-:root {
-}
+
 /* BASE */
 * {
   margin: 0px;
@@ -9,9 +8,10 @@
 }
 
 html {
-  background-color: black;
+  background: rgba(0, 27, 55, 1);
   color: white;
   font-family: "Gotham", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .centered {
@@ -21,6 +21,25 @@ html {
   align-items: center;
   width: 100%;
   height: 100vh;
+}
+
+.row {
+  margin-right: -25px;
+  margin-left: -25px;
+}
+.container {
+  width: 750px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body.preload * {
+  animation-duration: 0s !important;
+  -webkit-animation-duration: 0s !important;
+  transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s,
+    padding 0s, margin 0s !important;
 }
 
 .blue-gradient {
@@ -40,6 +59,7 @@ nav {
   background-color: #003877;
   border-bottom: solid;
 }
+
 .logo {
   color: rgb(226, 226, 226);
   text-transform: uppercase;
@@ -59,7 +79,13 @@ nav {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
+  padding: 10px;
+}
+nav a:hover {
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .burger {
@@ -88,7 +114,7 @@ nav {
   }
   .logo {
     display: block;
-    text-indent: -240px;
+    text-indent: -230px;
   }
   .nav-links {
     position: absolute;
@@ -102,9 +128,18 @@ nav {
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    border-left: solid;
   }
   .nav-links li {
     opacity: 0;
+  }
+  .nav-links a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-radius: 10px;
+    font-size: 25px;
   }
   .burger {
     position: absolute;
@@ -154,20 +189,160 @@ nav {
 
 #picture-of-me {
   display: flex;
-  width: 15%;
+  width: 19%;
   border-radius: 200px;
   border-style: solid;
   margin: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+#picture-of-me:hover {
+  transition: all 0.4s ease-in-out;
+  width: 24%;
 }
 
 @media screen and (max-width: 1024px) {
   #picture-of-me {
-    width: 30%;
+    width: 50%;
   }
+  #picture-of-me:hover {
+  transition: all 0.4s ease-in-out;
+  width: 60%;
+}
 }
 
 /* About section */
 
 #about-section {
-  font-size: 200px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#about-row {
+  background: #000813;
+  padding: 15px;
+  border-radius: 50px;
+  border: solid;
+}
+
+#about-section h3 {
+  font-size: 40px;
+}
+
+@media (max-width: 900px) {
+  #about-container {
+    width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+  #about-row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+#about-description {
+  text-align: center;
+}
+
+#resume-link {
+  color: white;
+}
+
+#resume-link:hover {
+  color: #03152e;
+}
+/* Work section */
+
+.projects-section {
+  text-align: center;
+}
+.projects-section-header {
+  margin: 20px;
+}
+
+@media (max-width: 1524px) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  border-radius: 50px 50px 0px 0px;
+  
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.project-tile {
+  background: #000813;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+.project-tile:hover {
+  background: #03152e;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  padding: 2rem 0.5rem;
+}
+
+
+/* Contact Section */
+#contact-section {
+  text-align: center;
+  margin: 10px;
+}
+.icons {
+  text-align: center;
+  text-decoration: none;
+}
+#contact-section h1 {
+  margin: 10px;
+}
+#contact-section h2 {
+  margin: 5px;
+}
+#linkedin-icon,
+#github-icon {
+  color: white;
+  margin-top: 10px;
+}
+#linkedin-icon:hover,
+#github-icon:hover {
+  color: #000813;
+}
+#email-form {
+  background: #000813;
+  padding: -50px;
+}
+.form-container {
+  width: 350px;
+  height: 200px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50px;
 }
