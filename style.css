@@ -66,6 +66,19 @@ nav {
   letter-spacing: 2px;
   font-size: 20px;
 }
+
+@media screen and (max-width: 500px) {
+  .logo {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    margin-left: 100px;
+  }
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -108,7 +121,7 @@ nav a:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   body {
     overflow-x: hidden;
   }
@@ -270,6 +283,12 @@ nav a:hover {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 1em .7em;
   }
 }
 
