@@ -75,9 +75,16 @@ nav {
 
 @media screen and (max-width: 400px) {
   .logo {
-    margin-left: 100px;
+    margin-left: 120px;
   }
 }
+
+@media screen and (max-width: 370px) {
+  .logo {
+    margin-left: 150px;
+  }
+}
+
 
 .nav-links {
   display: flex;
@@ -288,7 +295,7 @@ nav a:hover {
 
 @media (max-width: 600px) {
   .projects-section {
-    padding: 1em .7em;
+    padding: 0em .5em;
   }
 }
 
