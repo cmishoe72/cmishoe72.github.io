@@ -68,10 +68,6 @@ nav {
   font-size: 20px;
 }
 
-#logo-img {
-  width:5%;
-}
-
 @media screen and (max-width: 500px) {
   .logo {
     margin-left: 70px;
@@ -80,7 +76,7 @@ nav {
 
 @media screen and (max-width: 400px) {
   .logo {
-    opacity: 0;
+    margin-left: 120px;
   }
 }
 
