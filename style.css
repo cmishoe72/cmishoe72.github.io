@@ -68,26 +68,6 @@ nav {
   font-size: 20px;
 }
 
-@media screen and (max-width: 500px) {
-  .logo {
-    margin-left: 70px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .logo {
-    margin-left: 120px;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .logo {
-    margin-left: 150px;
-    position: relative;
-    height: 100%;
-  }
-}
-
 
 .nav-links {
   display: flex;
@@ -137,7 +117,6 @@ nav a:hover {
   }
   .logo {
     display: block;
-    text-indent: -230px;
   }
   .nav-links {
     position: absolute;
@@ -235,7 +214,6 @@ nav a:hover {
 /* About section */
 
 #about-section {
-  margin-top: 20px;
   text-align: center;
 }
 
@@ -265,10 +243,8 @@ nav a:hover {
 @media (max-width: 900px) {
   #about-container {
     width: 100%;
-  padding-right: 0px;
-  padding-left: 0px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0;
+  
   }
   #about-row {
     margin-left: 10px;
@@ -277,7 +253,7 @@ nav a:hover {
 }
 
 #about-description {
-  text-align: center;
+  
 }
 
 #resume-link {
