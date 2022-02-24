@@ -68,11 +68,6 @@ nav {
   font-size: 20px;
 }
 
-#about-description {
-  margin-top: 10px;
-  font-weight: 400;
-}
-
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -118,10 +113,6 @@ nav a:hover {
 @media screen and (max-width: 750px) {
   body {
     overflow-x: hidden;
-  }
-  .logo {
-    display: block;
-    text-indent: -230px;
   }
   .nav-links {
     position: absolute;
@@ -194,7 +185,7 @@ nav a:hover {
 
 #picture-of-me {
   display: flex;
-  width: 19%;
+  width: 20%;
   border-radius: 200px;
   border-style: solid;
   margin: 5px;
@@ -234,12 +225,12 @@ nav a:hover {
   font-size: 40px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #about-section h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
   #about-description {
-    font-size: 10px;
+    font-size: 18px;
   }
   #resume-link {
     font-size: 20px;
@@ -261,7 +252,8 @@ nav a:hover {
 }
 
 #about-description {
-  text-align: center;
+  margin-top: 10px;
+  font-weight: 400;
 }
 
 #resume-link {
@@ -327,7 +319,8 @@ nav a:hover {
 
 .project-title {
   font-size: 1.5rem;
-  padding: 2rem 0.5rem;
+  padding: 2rem 1rem;
+  font-weight: 400;
 }
 
 
